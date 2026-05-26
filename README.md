@@ -111,13 +111,13 @@ Inspired by Arrived.com and supported by the open-source work of the React and T
 ## Clone
 
 ```
-   git clone https://github.com/kevim-nektra/rentverse-demo.git
+   git clone https://github.com/kevim-nektra/rent-demo.git
 ```
 
 ## Change directory
 
 ```
-   cd rentverse-demo
+   cd rent-demo
 ```
 
 ## Install dependencies
