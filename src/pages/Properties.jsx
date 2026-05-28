@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FiFilter, FiArrowRight, FiTrendingUp, FiDollarSign } from 'react-icons/fi';
 import { FaEthereum } from 'react-icons/fa';
-
+import { ethers } from 'ethers';
 function Properties() {
   const [showFilters, setShowFilters] = useState(false);
   const [filters, setFilters] = useState({
@@ -360,7 +360,11 @@ function Properties() {
                     </div>
                   </div>
 
-                  <button className="btn w-full flex items-center justify-center">
+                  <button
+                    onClick={() =>
+                      placeOrder(property.id)}
+                    className="btn w-full flex items-center justify-center"
+                    >
                     Invest Now
                     <FiArrowRight className="ml-2" />
                   </button>
